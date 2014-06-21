@@ -1,0 +1,230 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../../sass/sass/modules/_main.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', 'sans-serif';
+}
+
+/* line 9, ../../sass/sass/modules/_main.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 13, ../../sass/sass/modules/_main.scss */
+h2 {
+  font-size: 2.5em;
+}
+
+/* line 17, ../../sass/sass/modules/_main.scss */
+h3 {
+  font-size: 2em;
+}
+
+/* line 21, ../../sass/sass/modules/_main.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 25, ../../sass/sass/modules/_main.scss */
+h5 {
+  font-size: 1em;
+}
+
+/* line 29, ../../sass/sass/modules/_main.scss */
+html {
+  background: url("../../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', 'Raleway', 'sans-serif';
+  line-height: 1.5em;
+  letter-spacing: 2px;
+}
+
+/* line 40, ../../sass/sass/modules/_main.scss */
+aside.sidebar {
+  box-sizing: border-box;
+  position: fixed;
+  background: #1b263c url("../../images/noise.png");
+  height: 100%;
+  width: 20%;
+  padding: 0 10px;
+  color: #b3bdd6;
+  text-shadow: -1px -1px 0 #cddaeb;
+  font-size: 1.2em;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+}
+
+/* line 55, ../../sass/sass/modules/_main.scss */
+aside.sidebar .mao_logo {
+  height: 10%;
+  width: 20%;
+}
+
+/* line 60, ../../sass/sass/modules/_main.scss */
+aside.sidebar .texto_logo {
+  height: 10%;
+  width: 60%;
+}
+
+/* line 65, ../../sass/sass/modules/_main.scss */
+aside.sidebar::after {
+  background: -webkit-linear-gradient(left, transparent, black);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, transparent, black);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, transparent, black);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, transparent, #000000);
+  /* Standard syntax */
+  width: 10px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 78, ../../sass/sass/modules/_main.scss */
+aside.sidebar header {
+  margin: 5px auto;
+}
+
+/* line 82, ../../sass/sass/modules/_main.scss */
+aside.sidebar nav {
+  margin-top: 50px;
+  padding: 5px 30px;
+  height: 100%;
+}
+
+/* line 88, ../../sass/sass/modules/_main.scss */
+aside.sidebar nav li {
+  margin: 20px 5px;
+}
+
+/* line 93, ../../sass/sass/modules/_main.scss */
+div.container {
+  position: relative;
+  width: 80%;
+  margin: 20px 0;
+  float: right;
+}
+
+/* line 100, ../../sass/sass/modules/_main.scss */
+hr.separador {
+  border: 1px solid #434364;
+  box-shadow: 1px 1px 1px #ffffff;
+}
+
+/* line 105, ../../sass/sass/modules/_main.scss */
+hr.clear {
+  clear: both;
+  border-width: 0;
+}
+
+/* line 1, ../../sass/sass/modules/_home.scss */
+section.content {
+  box-sizing: border-box;
+  width: 1000px;
+  padding: 20px;
+  margin: 20px auto;
+  border-style: solid;
+  border-width: 0;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  left: 50%;
+  margin-left: -500px;
+}
+
+/* line 15, ../../sass/sass/modules/_home.scss */
+section.content header {
+  text-align: center;
+}
+
+/* line 19, ../../sass/sass/modules/_home.scss */
+section.content header h5 {
+  margin-top: 10px;
+}
+
+/* line 23, ../../sass/sass/modules/_home.scss */
+section.content article {
+  padding: 30px;
+  word-wrap: break-word;
+}
+
+/* line 28, ../../sass/sass/modules/_home.scss */
+section.content footer {
+  padding: 10px;
+  text-align: center;
+}

@@ -1,0 +1,55 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang='pt-BR'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Veine::2014</title>
+    <link rel="stylesheet" href="{% static 'stylesheets/sass/screen.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Raleway:300' rel='stylesheet' type='text/css'>
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+        <header>
+            <img src="{% static 'images/mao.png' %}" class="mao_logo" alt="Mão">
+            <img src="{% static 'images/logo_branca.png' %}" class="texto_logo" alt="Logo">
+        </header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <hr class="separador">
+                <li>CD's</li>
+                <hr class="separador">
+                <li>Escute a Veine</li>
+                <hr class="separador">
+                <li>Conheça a Veine</li>
+                <hr class="separador">
+                <li>Veine no Youtube</li>
+                <hr class="separador">
+                <li>Veine no Soundcloud </li>
+                <hr class="separador">
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </aside>
+      <div class="container">
+          {% for post in posts %}
+            <section class="content">
+                <header>
+                    <h1>{{ post.title }}</h1>
+                    <hr class="clear">
+                    <h5>{{ post.publication_date }} <em>por</em> Renato</h5>
+                </header>
+                <hr>
+                <article>
+                    {{ post.content }}
+                </article>
+                <hr>
+                <footer>
+                    <h5>BLABLABLA de redes sociais e os caralhos sobre o post!</h5>
+                </footer>
+            </section>
+          {% endfor %}
+      </div>
+  </body>
+</html>

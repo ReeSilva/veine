@@ -1,0 +1,108 @@
+$sidebar_color: #1b263c;
+$sidebar_text_color: #b3bdd6;
+$sidebar_text_shadow: #cddaeb;
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', 'sans-serif';
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+html {
+    background: url('../../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', 'Raleway', 'sans-serif';
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+
+aside.sidebar {
+    box-sizing: border-box;
+    position: fixed;
+    background: $sidebar_color url('../../images/noise.png');
+    height: 100%;
+    width: 20%;
+    padding: 0 10px;
+    color: $sidebar_text_color;
+    text-shadow: -1px -1px 0 $sidebar_text_shadow;
+    font-size: 1.2em;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+}
+
+aside.sidebar .mao_logo{
+    height: 10%;
+    width: 20%;
+}
+
+aside.sidebar .texto_logo{
+    height: 10%;
+    width: 60%;
+}
+
+aside.sidebar::after {
+    background: -webkit-linear-gradient(left, transparent, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, transparent, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, transparent, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, transparent, black); /* Standard syntax */   
+    width: 10px;
+    height: 100%;
+    content: ""; 
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+aside.sidebar header{
+    margin: 5px auto;
+}
+
+aside.sidebar nav{
+    margin-top: 50px;
+    padding: 5px 30px;
+    height: 100%;
+}
+
+aside.sidebar nav li{
+    margin: 20px 5px;
+}
+
+
+div.container {
+    position: relative;
+    width: 80%;
+    margin: 20px 0;
+    float: right;
+}
+
+hr.separador {
+    border: 1px solid #434364;
+    box-shadow: 1px 1px 1px #ffffff;
+}
+
+hr.clear {
+    clear: both;
+    border-width: 0;
+}
